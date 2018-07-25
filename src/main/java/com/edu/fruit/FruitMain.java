@@ -5,8 +5,10 @@
  */
 package com.edu.fruit;
 
+import builder.Person;
+import builder.PersonBuilder;
+import com.alibaba.fastjson.JSON;
 import lombok.extern.log4j.Log4j;
-import org.apache.log4j.BasicConfigurator;
 
 /**
  *
@@ -20,7 +22,7 @@ public class FruitMain {
         Apple ap = new Apple();
         ap.setColour(0);
 //        System.out.println("com.edu.fruit.FruitMain.main():" + ap.toString());
-        System.out.println("com.edu.fruit.FruitMain.main()");
+//        System.out.println("com.edu.fruit.FruitMain.main()");
         log.info(ap.toString());;
     }
 
