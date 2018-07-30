@@ -14,22 +14,9 @@ import lombok.Data;
 /**
  * 使用Builder模式
  */
-//@Data
+@Data
 public class Person {
 
-    /**
-     * @return the id
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * @return the name
-     */
-    public String getName() {
-        return name;
-    }
 
     //必要参数
     private final int id;

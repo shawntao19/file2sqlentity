@@ -3,7 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jdk8;
+package jdk8.lambda;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -27,11 +30,11 @@ public class Lambda {
         oldSchool.start();
         gaoDuanDaQiShangDangCi.start();
 
-//        List<String> sslist = new ArrayList<>();
-//        sslist.add("a");
-//        sslist.add("b");
-//        sslist.forEach(o -> {
-//            System.out.println(o);
-//        });
+        List<String> sslist = new ArrayList<>();
+        sslist.add("a");
+        sslist.add("b");
+        sslist.forEach(o -> {
+            System.out.println(o);
+        });
     }
 }
