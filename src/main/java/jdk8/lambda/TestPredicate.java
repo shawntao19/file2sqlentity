@@ -5,22 +5,37 @@
  */
 package jdk8.lambda;
 
-import java.io.File;
-import java.io.FileFilter;
-import java.security.PrivilegedActionException;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.function.Predicate;
+import static jdk8.lambda.rrr.filter;
+import org.junit.Test;
 
 /**
  *
  * @author happy
  */
-public class rrr {
+public class TestPredicate {
 
-    public static void main(String[] args) throws PrivilegedActionException {
-//        FileFilter java = (File f) -> f.getName().endsWith("*.java");
-        test15();
+    public void test16() {
+        Predicate<String> startWithJ = (n) -> n.startsWith("J");
+        Predicate<String> fourLength = (n) -> n.length() == 4;
+
+        List<String> languages = Arrays.asList("Java", "Scala", "C++", "Haskell", "Lisp");
+        languages.stream().filter(startWithJ.and(fourLength))
+                .forEach(System.out::println);
+    }
+
+    public void test167() {
+        final int num = 1;
+        Converter s = (param) -> System.out.println(String.valueOf(param + num));
+        s.convert(2);  // 输出结果为 3
+    }
+
+    public interface Converter {
+
+        void convert(int i);
     }
 
     public static void test15() {
@@ -43,11 +58,10 @@ public class rrr {
 
     }
 
-    public static void filter(List<String> names, Predicate condition) {
-        for (String name : names) {
-            if (condition.test(name)) {
-                System.out.println(name + " ");
-            }
-        }
+    @Test
+    public void test168() {
+        Random random = new Random();
+        random.ints().sorted().limit(10).forEach(System.out::println);
     }
+
 }

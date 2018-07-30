@@ -33,8 +33,10 @@ public class Lambda {
         List<String> sslist = new ArrayList<>();
         sslist.add("a");
         sslist.add("b");
-        sslist.forEach(o -> {
-            System.out.println(o);
-        });
+//        sslist.forEach(o -> {
+//            System.out.println(o);
+//        });
+        sslist.forEach(System.out::println);
+
     }
 }
