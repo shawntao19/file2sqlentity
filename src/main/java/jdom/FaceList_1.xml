@@ -1,0 +1,8 @@
+<FDLibBaseCfgList version="1.0" xmlns="http://www.hikvision.com/ver20/XMLSchema">
+    <FDLibBaseCfg version="1.0" xmlns="http://www.hikvision.com/ver20/XMLSchema">
+        <id>1</id>
+        <FDID>48B29D9DC7C54BEE984E606B9B3EB390</FDID>
+        <name>11</name>
+        <faceLibType>ordinary</faceLibType>
+    </FDLibBaseCfg>
+</FDLibBaseCfgList>
