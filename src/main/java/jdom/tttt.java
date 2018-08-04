@@ -34,6 +34,7 @@ public class tttt {
 
             //change the name to BLOCK letters
             String name = empElement.getChildText("name",ns);
+//            empElement.set
             System.out.println("jdom.tttt.main():"+name);
         }
     }
