@@ -1,24 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<code class=" hljs xml">
-  <!--{cke_protected}{C}%3C!%2D%2D%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%2D%2D%3E-->
-  <employees xmlns="https://www.journaldev.com/employees">
-    <employee id="1">
-      <age>25</age>
-      <name>Pankaj</name>
-      <gender>Male</gender>
-      <role>Java Developer</role>
-    </employee>
-    <employee id="2">
-      <age>34</age>
-      <name>Mona</name>
-      <gender>Female</gender>
-      <role>Manager</role>
-    </employee>
-    <employee id="3">
-      <age>45</age>
-      <name>Dave</name>
-      <gender>Male</gender>
-      <role>Support</role>
-    </employee>
-  </employees>
-</code>
+<FDLibCap xmlns="http://www.hikvision.com/ver20/XMLSchema" version="1.0">
+  <CreateFDLibList size="16">
+    <CreateFDLib>
+      <id min="1" max="16" />
+      <name min="1" max="32" />
+      <faceDataMax min="1" max="0" />
+      <customFaceLibID min="0" max="64" />
+      <indentityKey min="0" max="64" />
+    </CreateFDLib>
+  </CreateFDLibList>
+  <FaceAppendData>
+    <bornTime />
+    <name min="1" max="64" />
+    <sex opt="male,female" />
+    <province />
+    <city />
+    <certificateType opt="officerID,ID,passportID,other" />
+    <certificateNumber min="1" max="32" />
+    <PersonInfoExtendList size="4" />
+    <isSupportPhoneNumber>true</isSupportPhoneNumber>
+    <customHumanID min="0" max="64" />
+  </FaceAppendData>
+  <FDSearchDescription>
+    <FDID>00000000000000000000000000000000</FDID>
+    <startTime />
+    <endTime />
+    <name min="1" max="64" />
+    <sex opt="male,female" />
+    <province />
+    <city />
+    <certificateType opt="officerID,ID,passportID,other" />
+    <certificateNumber min="1" max="32" />
+    <FaceModeCap>
+      <FaceMode>
+        <similarity min="0.0" max="100.0" />
+      </FaceMode>
+    </FaceModeCap>
+    <modelStatus opt="modeling,unmodeled,modelingFailed" />
+    <modelingStatus opt="success,none,failed" />
+    <customFaceLibID min="0" max="64" />
+    <indentityKey min="0" max="64" />
+  </FDSearchDescription>
+  <isSuportAnalysisFace>true</isSuportAnalysisFace>
+  <isSuportFCSearch>true</isSuportFCSearch>
+  <isSupportFDLibEachImport>true</isSupportFDLibEachImport>
+  <FCSearchDescription>
+    <snapStartTime>1970-01-01T00:00:00+08:00</snapStartTime>
+    <snapEndTime>2050-12-30T23:59:59+08:00</snapEndTime>
+    <eventType opt="unlimit,faceContrast,whiteFaceContrast" />
+    <FaceModeCap>
+      <FaceMode>
+        <similarity min="0.0" max="100.0" />
+      </FaceMode>
+    </FaceModeCap>
+    <PictureSearchCap>
+      <maxSearchPictureNum min="1" max="1" />
+    </PictureSearchCap>
+    <isSupportMultiChannelSearch>true</isSupportMultiChannelSearch>
+    <isSupportTotalSearchResult>true</isSupportTotalSearchResult>
+  </FCSearchDescription>
+  <isSupportFCSearchDataPackage>true</isSupportFCSearchDataPackage>
+  <maxFCSearchDataPackageNum>1000</maxFCSearchDataPackageNum>
+  <isSupportStandardSearch>true</isSupportStandardSearch>
+  <isSupportFaceDataExport>true</isSupportFaceDataExport>
+  <isSupportNewlyPictureUpload>true</isSupportNewlyPictureUpload>
+  <isSupportFCSearchNormal>true</isSupportFCSearchNormal>
+  <isSupportPrompt>true</isSupportPrompt>
+  <isSupportFCSearchJsonFormat>true</isSupportFCSearchJsonFormat>
+  <isSupportFCSearchDataPackageJsonFormat>true</isSupportFCSearchDataPackageJsonFormat>
+  <isSupportManualModeling>true</isSupportManualModeling>
+  <isSupportModelingStatusSearch>true</isSupportModelingStatusSearch>
+  <isSupportCustomHumanID>true</isSupportCustomHumanID>
+  <isSupportCustomFaceLibID>true</isSupportCustomFaceLibID>
+  <isSupportFDCapacity>true</isSupportFDCapacity>
+  <SupportUploadPictureType opt="binary,url" />
+</FDLibCap>

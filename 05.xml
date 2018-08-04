@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StudentRecords>
+  <ggl:Student xmlns:ggl="www.google.com">
+    <id>1</id>
+    <name>Jack</name>
+    <age>14</age>
+  </ggl:Student>
+  <ggl:Student xmlns:ggl="www.google.com">
+    <id>2</id>
+    <name>Mike</name>
+    <age>15</age>
+  </ggl:Student>
+  <fox:Student xmlns:fox="www.firefox.com">
+    <id>3</id>
+    <name>Paul</name>
+    <age>15</age>
+  </fox:Student>
+</StudentRecords>
+

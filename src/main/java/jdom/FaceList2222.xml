@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FDLibBaseCfgList xmlns="http://www.hikvision.com/ver20/XMLSchema" version="1.0">
-    <FDLibBaseCfg version="1.0" name="112332131">
+    <FDLibBaseCfg version="1.0">
         <id>1</id>
         <FDID>48B29D9DC7C54BEE984E606B9B3EB390</FDID>
         <name222>123132</name222>
