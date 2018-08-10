@@ -100,6 +100,9 @@
 
 
     </dependencies>
+    
+    
+   
 
     <build>
         <plugins>
@@ -111,7 +114,8 @@
                     <source>1.8</source>
                     <target>1.8</target>
                     <compilerArguments>
-                        <endorseddirs>${endorsed.dir}</endorseddirs>
+                        <!--<endorseddirs>${endorsed.dir}</endorseddirs>-->
+                        <bootclasspath>${JAVA_HOME}/jre/lib/rt.jar</bootclasspath>
                     </compilerArguments>
                 </configuration>
             </plugin>
